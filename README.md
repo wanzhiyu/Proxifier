@@ -1,5 +1,6 @@
 #Proxifier
-https://wanzhiyu.coding.net/p/Proxifier/d/Proxifier/git/raw/master/main.ppx
+<!-- https://wanzhiyu.coding.net/p/Proxifier/d/Proxifier/git/raw/master/main.ppx -->
+https://raw.githubusercontent.com/wanzhiyu/Proxifier/main/main.ppx
 
 任务计划程序：
 只在用户登录时运行（R）
