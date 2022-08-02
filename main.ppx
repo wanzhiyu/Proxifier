@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxifierProfile version="102" platform="Windows" product_id="0" product_minver="400">
+	<Options>
+		<Resolve>
+			<AutoModeDetection enabled="true" />
+			<ViaProxy enabled="false" />
+			<ExclusionList OnlyFromListMode="false">localhost;*.coding.net;*.accesstofree2018.science;*.qq.com;*.jd.com</ExclusionList>
+			<DnsUdpMode>0</DnsUdpMode>
+		</Resolve>
+		<Encryption mode="disabled" />
+		<ConnectionLoopDetection enabled="true" resolve="true" />
+		<ProcessOtherUsers enabled="true" />
+		<ProcessServices enabled="true" />
+		<HandleDirectConnections enabled="false" />
+		<HttpProxiesSupport enabled="true" />
+	</Options>
+	<ProxyList>
+		<Proxy id="0" type="HTTPS">
+			<Options>304</Options>
+			<Port>1380</Port>
+			<Address>127.0.0.1</Address>
+			<Label>http</Label>
+		</Proxy>
+		<Proxy id="1" type="SOCKS5">
+			<Options>304</Options>
+			<Port>13800</Port>
+			<Address>127.0.0.1</Address>
+			<Label>jp.az</Label>
+		</Proxy>
+		<Proxy id="11" type="SOCKS5">
+			<Options>256</Options>
+			<Port>13900</Port>
+			<Address>127.0.0.1</Address>
+			<Label>zz->jp.az</Label>
+		</Proxy>
+		<Proxy id="2" type="SOCKS5">
+			<Options>256</Options>
+			<Port>13810</Port>
+			<Address>127.0.0.1</Address>
+			<Label>la2.py</Label>
+		</Proxy>
+		<Proxy id="12" type="SOCKS5">
+			<Options>304</Options>
+			<Port>13910</Port>
+			<Address>127.0.0.1</Address>
+			<Label>zz->la2.py</Label>
+		</Proxy>
+		<Proxy id="3" type="SOCKS5">
+			<Options>304</Options>
+			<Port>13820</Port>
+			<Address>127.0.0.1</Address>
+			<Label>jp.ov</Label>
+		</Proxy>
+		<Proxy id="13" type="SOCKS5">
+			<Options>304</Options>
+			<Port>13920</Port>
+			<Address>127.0.0.1</Address>
+			<Label>zz->jp.ov</Label>
+		</Proxy>
+		<Proxy id="4" type="SOCKS5">
+			<Options>304</Options>
+			<Port>13830</Port>
+			<Address>127.0.0.1</Address>
+			<Label>nv.ju</Label>
+		</Proxy>
+		<Proxy id="14" type="SOCKS5">
+			<Options>304</Options>
+			<Port>13930</Port>
+			<Address>127.0.0.1</Address>
+			<Label>zz->nv.ju</Label>
+		</Proxy>
+		<Proxy id="100" type="SOCKS5">
+			<Options>304</Options>
+			<Port>13999</Port>
+			<Address>127.0.0.1</Address>
+			<Label>zz-balancer</Label>
+		</Proxy>
+	</ProxyList>
+	<ChainList />
+	<RuleList>
+		<Rule enabled="true">
+			<Action type="Direct" />
+			<Applications>wv2ray.exe</Applications>
+			<Name>wv2ray.exe [auto-created]</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Direct" />
+			<Targets>localhost; 127.0.0.1; %ComputerName%; ::1;192.168.*;*.msftconnecttest.com</Targets>
+			<Name>Localhost</Name>
+		</Rule>
+		<Rule enabled="false">
+			<Action type="Proxy">13</Action>
+			<Applications>teamviewer*.exe;</Applications>
+			<Name>teamviewer</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">3</Action>
+			<Applications>AdAppMgr*;choco.exe;servicehub*.exe</Applications>
+			<Name>必须走代理的软件</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">13</Action>
+			<Applications>*netflix.com</Applications>
+			<Name>netflix</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">3</Action>
+			<Applications>wwahost.exe</Applications>
+			<Name>wwahost</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">3</Action>
+			<Applications>"C:\Program Files (x86)\Microsoft\Edge Beta\Application\msedge.exe"</Applications>
+			<Name>msedge beta</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">100</Action>
+			<Applications>msedge*; msedgewebview2.exe</Applications>
+			<Name>msedge</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">100</Action>
+			<Applications>chrome.exe</Applications>
+			<Name>chrome</Name>
+		</Rule>
+		<Rule enabled="false">
+			<Action type="Proxy">13</Action>
+			<Applications>firefox.exe</Applications>
+			<Name>firefox</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">100</Action>
+			<Applications>opera*.exe;</Applications>
+			<Name>opera</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">3</Action>
+			<Applications>ONENOTE.EXE;peopleapp.exe;yourphone.exe;onenoteim.exe;outlook.exe;whiteboardwrt.exe;POWERPNT.EXE;WINWORD.EXE;*.sharepoint.exe</Applications>
+			<Name>家庭版Office</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">100</Action>
+			<Targets>*.sharepoint.com;*.office.net;*.windows.net</Targets>
+			<Applications>onedrive.exe</Applications>
+			<Name>OFB (OneDrive for business)</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">100</Action>
+			<Applications>onedrive.exe</Applications>
+			<Name>OD</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">100</Action>
+			<Applications>uplay.exe; upc.exe; ubisoftgamelauncher.exe; ubisoftgamelauncher64.exe; uplaycrashreporter.exe; uplayservice.exe; uplaywebcore.exe;steam*.exe;BEService*;TslGame*;</Applications>
+			<Name>游戏Launcher</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">3</Action>
+			<Applications>devenv.exe;qt*-online.exe;vs_setup_bootstrapper.exe;vs_installer*.exe;python.exe;code.exe;pycharm*;*docker*;vpnkit*;node.exe</Applications>
+			<Name>开发工具</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">100</Action>
+			<Applications>IDMan.exe;aria2c.exe;"C:\Program Files\4KDownload\4kvideodownloader\*.exe"</Applications>
+			<Name>下载工具</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">100</Action>
+			<Applications>qbittorrent.exe;emule.exe</Applications>
+			<Name>BT</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">100</Action>
+			<Targets>*.staticaly.com;*.jsdelivr.net;*.githubusercontent.com;</Targets>
+			<Applications>qbittorrent.exe;emule.exe</Applications>
+			<Name>Copy of BT</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">3</Action>
+			<Applications>telegram.exe</Applications>
+			<Name>telegram</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">100</Action>
+			<Applications>AddOnProductInstaller.exe;setup.exe;MATLABWindow.exe;update_installer.exe</Applications>
+			<Name>matlab</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">3</Action>
+			<Applications>bitcoin*.exe;NiceHash*;Kryptex.exe;app_nhm.exe;cudo*miner*;xmrig.exe;excavator.exe;PhoenixMiner.exe;xmrig.exe;excavator.exe;lolMiner.exe;miner.exe;miniZ.exe;miniZ_gui.exe;nanominer.exe;nbminer.exe;TT-Miner.exe;z-enemy.exe</Applications>
+			<Name>比特币挖矿</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">3</Action>
+			<Applications>wish.exe;</Applications>
+			<Name>Latex</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">3</Action>
+			<Applications>rufus*.exe</Applications>
+			<Name>rufus</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">3</Action>
+			<Applications>"C:\Program Files\National Instruments\NI Package Manager\Updater\install.exe";nipackagemanager.exe;</Applications>
+			<Name>NI</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">3</Action>
+			<Applications>jucheck.exe;javaw.exe</Applications>
+			<Name>java</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">3</Action>
+			<Applications>*NVIDIA*;*GeForce*Experience*;nvcontainer.exe;"nvidia geforce experience. exe"</Applications>
+			<Name>NVIDIA</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">3</Action>
+			<Applications>zotero.exe</Applications>
+			<Name>zotero</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">3</Action>
+			<Applications>discord.exe</Applications>
+			<Name>Discord Chat</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">3</Action>
+			<Applications>githubdesktop.exe;git-remote-https.exe;</Applications>
+			<Name>Github</Name>
+		</Rule>
+		<Rule enabled="false">
+			<Action type="Proxy">3</Action>
+			<Applications>hd-player.exe;memu*.exe;nox_adb.exe;noxvmhandle.exe;noxvboxhandle.exe</Applications>
+			<Name>安卓模拟器</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">100</Action>
+			<Applications>studio64.exe;qemu-system*.exe</Applications>
+			<Name>Android Studio</Name>
+		</Rule>
+		<Rule enabled="false">
+			<Action type="Proxy">3</Action>
+			<Applications>aria2c.exe</Applications>
+			<Name>aria2c</Name>
+		</Rule>
+		<Rule enabled="false">
+			<Action type="Proxy">3</Action>
+			<Applications>WsaClient.exe;msmpeng.exe</Applications>
+			<Name>WSA</Name>
+		</Rule>
+		<Rule enabled="false">
+			<Action type="Proxy">3</Action>
+			<Applications>PowerToys*.exe</Applications>
+			<Name>PowerToys</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">3</Action>
+			<Applications>perl.exe</Applications>
+			<Name>perl</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">3</Action>
+			<Applications>powershell.exe</Applications>
+			<Name>powershell</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Direct" />
+			<Name>Default</Name>
+		</Rule>
+	</RuleList>
+</ProxifierProfile>
