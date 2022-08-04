@@ -266,6 +266,11 @@
 			<Name>powershell</Name>
 		</Rule>
 		<Rule enabled="true">
+			<Action type="Proxy">100</Action>
+			<Applications>DeepL.exe;CefSharp.BrowserSubprocess.exe</Applications>
+			<Name>DeepL</Name>
+		</Rule>
+		<Rule enabled="true">
 			<Action type="Direct" />
 			<Name>Default</Name>
 		</Rule>
