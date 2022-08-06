@@ -134,6 +134,16 @@
 			<Name>opera</Name>
 		</Rule>
 		<Rule enabled="true">
+			<Action type="Proxy">100</Action>
+			<Applications>vivaldi.exe</Applications>
+			<Name>Vivaldi</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">100</Action>
+			<Applications>Yandex.exe;"C:\Users\wanzh\AppData\Local\Yandex\YandexBrowser\Application\browser.exe"</Applications>
+			<Name>Yandex</Name>
+		</Rule>
+		<Rule enabled="true">
 			<Action type="Proxy">3</Action>
 			<Applications>ONENOTE.EXE;peopleapp.exe;yourphone.exe;onenoteim.exe;outlook.exe;whiteboardwrt.exe;POWERPNT.EXE;WINWORD.EXE;*.sharepoint.exe</Applications>
 			<Name>家庭版Office</Name>
