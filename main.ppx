@@ -123,8 +123,8 @@
 			<Applications>chrome.exe</Applications>
 			<Name>chrome</Name>
 		</Rule>
-		<Rule enabled="false">
-			<Action type="Proxy">13</Action>
+		<Rule enabled="true">
+			<Action type="Proxy">100</Action>
 			<Applications>firefox.exe</Applications>
 			<Name>firefox</Name>
 		</Rule>
