@@ -170,7 +170,7 @@
 			<Name>开发工具</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">100</Action>
+			<Action type="Proxy">1</Action>
 			<Applications>IDMan.exe;aria2c.exe;"C:\Program Files\4KDownload\4kvideodownloader\*.exe"</Applications>
 			<Name>下载工具</Name>
 		</Rule>
