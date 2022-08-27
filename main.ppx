@@ -109,14 +109,14 @@
 			<Name>wwahost</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">3</Action>
-			<Applications>"C:\Program Files (x86)\Microsoft\Edge Beta\Application\msedge.exe"</Applications>
-			<Name>msedge beta</Name>
-		</Rule>
-		<Rule enabled="true">
 			<Action type="Proxy">100</Action>
 			<Applications>msedge*; msedgewebview2.exe</Applications>
 			<Name>msedge</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">3</Action>
+			<Applications>"C:\Users\wanzh\AppData\Local\Google\Chrome SxS\Application\chrome.exe"</Applications>
+			<Name>chrome canary</Name>
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">100</Action>
@@ -124,7 +124,7 @@
 			<Name>chrome</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">100</Action>
+			<Action type="Proxy">13</Action>
 			<Applications>firefox.exe</Applications>
 			<Name>firefox</Name>
 		</Rule>
