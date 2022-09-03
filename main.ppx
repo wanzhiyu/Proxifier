@@ -191,7 +191,7 @@
 			<Name>telegram</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">100</Action>
+			<Action type="Proxy">3</Action>
 			<Applications>AddOnProductInstaller.exe;setup.exe;MATLABWindow.exe;update_installer.exe</Applications>
 			<Name>matlab</Name>
 		</Rule>
