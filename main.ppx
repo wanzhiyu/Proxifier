@@ -4,7 +4,7 @@
 		<Resolve>
 			<AutoModeDetection enabled="true" />
 			<ViaProxy enabled="false" />
-			<ExclusionList OnlyFromListMode="false">localhost;*.coding.net;*.accesstofree2018.science;*.qq.com;*.jd.com;*.webofscience.com;*.webofknowledge.com;*.hust.edu.cn</ExclusionList>
+			<ExclusionList OnlyFromListMode="false">localhost;*.coding.net;*.accesstofree2018.science;*.qq.com;*.jd.com;</ExclusionList>
 			<DnsUdpMode>0</DnsUdpMode>
 		</Resolve>
 		<Encryption mode="disabled" />
