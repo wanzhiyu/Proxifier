@@ -4,7 +4,7 @@
 		<Resolve>
 			<AutoModeDetection enabled="true" />
 			<ViaProxy enabled="false" />
-			<ExclusionList OnlyFromListMode="false">localhost;</ExclusionList>
+			<ExclusionList OnlyFromListMode="false">localhost;*.qq.com;</ExclusionList>
 			<DnsUdpMode>0</DnsUdpMode>
 		</Resolve>
 		<Encryption mode="disabled" />
@@ -94,8 +94,8 @@
 			<Name>teamviewer</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">3</Action>
-			<Applications>AdAppMgr*;choco.exe;servicehub*.exe</Applications>
+			<Action type="Proxy">100</Action>
+			<Applications>AdAppMgr*;choco.exe;servicehub*.exe;svchost.exe</Applications>
 			<Name>必须走代理的软件</Name>
 		</Rule>
 		<Rule enabled="true">
@@ -124,7 +124,7 @@
 			<Name>chrome</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">100</Action>
+			<Action type="Proxy">13</Action>
 			<Applications>firefox.exe</Applications>
 			<Name>firefox</Name>
 		</Rule>
