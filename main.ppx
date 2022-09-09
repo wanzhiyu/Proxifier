@@ -114,7 +114,7 @@
 			<Name>msedge</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">3</Action>
+			<Action type="Proxy">100</Action>
 			<Applications>"C:\Users\wanzh\AppData\Local\Google\Chrome SxS\Application\chrome.exe"</Applications>
 			<Name>chrome canary</Name>
 		</Rule>
