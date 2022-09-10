@@ -94,8 +94,8 @@
 			<Name>teamviewer</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">100</Action>
-			<Applications>AdAppMgr*;choco.exe;servicehub*.exe;svchost.exe</Applications>
+			<Action type="Proxy">3</Action>
+			<Applications>AdAppMgr*;servicehub*.exe;svchost.exe</Applications>
 			<Name>必须走代理的软件</Name>
 		</Rule>
 		<Rule enabled="true">
@@ -176,14 +176,14 @@
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">100</Action>
-			<Applications>qbittorrent.exe;emule.exe</Applications>
-			<Name>BT</Name>
-		</Rule>
-		<Rule enabled="true">
-			<Action type="Proxy">100</Action>
 			<Targets>*.staticaly.com;*.jsdelivr.net;*.githubusercontent.com;</Targets>
 			<Applications>qbittorrent.exe;emule.exe</Applications>
 			<Name>Copy of BT</Name>
+		</Rule>
+		<Rule enabled="false">
+			<Action type="Proxy">100</Action>
+			<Applications>qbittorrent.exe;emule.exe</Applications>
+			<Name>BT</Name>
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">3</Action>
@@ -279,6 +279,11 @@
 			<Action type="Proxy">100</Action>
 			<Applications>DeepL.exe;CefSharp.BrowserSubprocess.exe</Applications>
 			<Name>DeepL</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">3</Action>
+			<Applications>choco.exe;</Applications>
+			<Name>choco</Name>
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Direct" />
