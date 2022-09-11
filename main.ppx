@@ -94,11 +94,6 @@
 			<Name>teamviewer</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">3</Action>
-			<Applications>AdAppMgr*;servicehub*.exe;svchost.exe</Applications>
-			<Name>必须走代理的软件</Name>
-		</Rule>
-		<Rule enabled="true">
 			<Action type="Proxy">13</Action>
 			<Applications>*netflix.com</Applications>
 			<Name>netflix</Name>
