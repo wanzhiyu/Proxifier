@@ -281,6 +281,11 @@
 			<Name>choco</Name>
 		</Rule>
 		<Rule enabled="true">
+			<Action type="Proxy">100</Action>
+			<Applications>pilotshubapp.exe</Applications>
+			<Name>反馈中心</Name>
+		</Rule>
+		<Rule enabled="true">
 			<Action type="Direct" />
 			<Name>Default</Name>
 		</Rule>
