@@ -8,7 +8,7 @@
 			<DnsUdpMode>0</DnsUdpMode>
 		</Resolve>
 		<Encryption mode="disabled" />
-		<ConnectionLoopDetection enabled="true" resolve="true" />
+		<ConnectionLoopDetection enabled="false" resolve="true" />
 		<ProcessOtherUsers enabled="true" />
 		<ProcessServices enabled="true" />
 		<HandleDirectConnections enabled="false" />
@@ -80,8 +80,8 @@
 	<RuleList>
 		<Rule enabled="true">
 			<Action type="Direct" />
-			<Applications>wv2ray.exe</Applications>
-			<Name>wv2ray.exe [auto-created]</Name>
+			<Applications>wv2ray.exe;v2ray.exe</Applications>
+			<Name>v2ray</Name>
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Direct" />
@@ -165,7 +165,7 @@
 			<Name>开发工具</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">4</Action>
+			<Action type="Proxy">2</Action>
 			<Applications>IDMan.exe;aria2c.exe;"C:\Program Files\4KDownload\4kvideodownloader\*.exe"</Applications>
 			<Name>下载工具</Name>
 		</Rule>
