@@ -99,7 +99,7 @@
 			<Name>netflix</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">3</Action>
+			<Action type="Proxy">100</Action>
 			<Applications>wwahost.exe</Applications>
 			<Name>wwahost</Name>
 		</Rule>
@@ -109,7 +109,7 @@
 			<Name>msedge</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">3</Action>
+			<Action type="Proxy">100</Action>
 			<Applications>"C:\Users\wanzh\AppData\Local\Google\Chrome SxS\Application\chrome.exe"</Applications>
 			<Name>chrome canary</Name>
 		</Rule>
@@ -139,7 +139,7 @@
 			<Name>Yandex</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">3</Action>
+			<Action type="Proxy">100</Action>
 			<Applications>ONENOTE.EXE;peopleapp.exe;yourphone.exe;onenoteim.exe;outlook.exe;whiteboardwrt.exe;POWERPNT.EXE;WINWORD.EXE;*.sharepoint.exe</Applications>
 			<Name>家庭版Office</Name>
 		</Rule>
@@ -160,7 +160,7 @@
 			<Name>游戏Launcher</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">3</Action>
+			<Action type="Proxy">100</Action>
 			<Applications>devenv.exe;qt*-online.exe;vs_setup_bootstrapper.exe;vs_installer*.exe;python.exe;code.exe;pycharm*;*docker*;vpnkit*;node.exe</Applications>
 			<Name>开发工具</Name>
 		</Rule>
@@ -181,7 +181,7 @@
 			<Name>BT</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">3</Action>
+			<Action type="Proxy">100</Action>
 			<Applications>telegram.exe</Applications>
 			<Name>telegram</Name>
 		</Rule>
@@ -231,7 +231,7 @@
 			<Name>Discord Chat</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">3</Action>
+			<Action type="Proxy">100</Action>
 			<Applications>githubdesktop.exe;git-remote-https.exe;</Applications>
 			<Name>Github</Name>
 		</Rule>
@@ -266,7 +266,7 @@
 			<Name>perl</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">3</Action>
+			<Action type="Proxy">100</Action>
 			<Applications>powershell.exe</Applications>
 			<Name>powershell</Name>
 		</Rule>
