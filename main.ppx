@@ -286,6 +286,11 @@
 			<Name>反馈中心</Name>
 		</Rule>
 		<Rule enabled="true">
+			<Action type="Proxy">100</Action>
+			<Applications>AudioRelay.exe</Applications>
+			<Name>Audio relay</Name>
+		</Rule>
+		<Rule enabled="true">
 			<Action type="Direct" />
 			<Name>Default</Name>
 		</Rule>
