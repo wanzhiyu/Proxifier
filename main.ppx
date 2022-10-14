@@ -109,7 +109,7 @@
 			<Name>msedge</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">100</Action>
+			<Action type="Proxy">3</Action>
 			<Applications>"C:\Users\wanzh\AppData\Local\Google\Chrome SxS\Application\chrome.exe"</Applications>
 			<Name>chrome canary</Name>
 		</Rule>
@@ -181,7 +181,7 @@
 			<Name>BT</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">100</Action>
+			<Action type="Proxy">3</Action>
 			<Applications>telegram.exe</Applications>
 			<Name>telegram</Name>
 		</Rule>
@@ -231,7 +231,7 @@
 			<Name>Discord Chat</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">100</Action>
+			<Action type="Proxy">3</Action>
 			<Applications>githubdesktop.exe;git-remote-https.exe;</Applications>
 			<Name>Github</Name>
 		</Rule>
