@@ -114,7 +114,7 @@
 			<Name>chrome canary</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">100</Action>
+			<Action type="Proxy">3</Action>
 			<Applications>chrome.exe;GoogleUpdate.exe</Applications>
 			<Name>chrome</Name>
 		</Rule>
@@ -166,8 +166,8 @@
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">100</Action>
-			<Applications>IDMan.exe;aria2c.exe;"C:\Program Files\4KDownload\4kvideodownloader\*.exe"</Applications>
-			<Name>下载工具</Name>
+			<Applications>IDMan.exe;"C:\Program Files\4KDownload\4kvideodownloader\*.exe"</Applications>
+			<Name>idm,4kvideo</Name>
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">100</Action>
@@ -266,7 +266,7 @@
 			<Name>perl</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">100</Action>
+			<Action type="Proxy">3</Action>
 			<Applications>powershell.exe</Applications>
 			<Name>powershell</Name>
 		</Rule>
