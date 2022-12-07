@@ -99,6 +99,11 @@
 			<Name>netflix</Name>
 		</Rule>
 		<Rule enabled="true">
+			<Action type="Proxy">3</Action>
+			<Applications>"C:\Program Files\Tor Browser\Browser\TorBrowser\Tor\PluggableTransports\*.exe";"C:\Program Files\Tor Browser\Browser\*.exe"</Applications>
+			<Name>Tor</Name>
+		</Rule>
+		<Rule enabled="true">
 			<Action type="Proxy">100</Action>
 			<Applications>wwahost.exe</Applications>
 			<Name>wwahost</Name>
