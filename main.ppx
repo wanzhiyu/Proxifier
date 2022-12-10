@@ -220,7 +220,7 @@
 			<Applications>jucheck.exe;javaw.exe</Applications>
 			<Name>java</Name>
 		</Rule>
-		<Rule enabled="true">
+		<Rule enabled="false">
 			<Action type="Proxy">100</Action>
 			<Applications>*NVIDIA*;*GeForce*Experience*;nvcontainer.exe;"nvidia geforce experience. exe"</Applications>
 			<Name>NVIDIA</Name>
