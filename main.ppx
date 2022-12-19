@@ -99,7 +99,7 @@
 			<Name>netflix</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">3</Action>
+			<Action type="Proxy">13</Action>
 			<Applications>"C:\Program Files\Tor Browser\Browser\TorBrowser\Tor\PluggableTransports\*.exe";"C:\Program Files\Tor Browser\Browser\*.exe"</Applications>
 			<Name>Tor</Name>
 		</Rule>
@@ -114,12 +114,12 @@
 			<Name>msedge</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">2</Action>
+			<Action type="Proxy">13</Action>
 			<Applications>"C:\Users\wanzh\AppData\Local\Google\Chrome SxS\Application\chrome.exe"</Applications>
 			<Name>chrome canary</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">3</Action>
+			<Action type="Proxy">13</Action>
 			<Applications>chrome.exe;GoogleUpdate.exe</Applications>
 			<Name>chrome</Name>
 		</Rule>
@@ -191,12 +191,12 @@
 			<Name>telegram</Name>
 		</Rule>
 		<Rule enabled="false">
-			<Action type="Proxy">3</Action>
+			<Action type="Proxy">13</Action>
 			<Applications>AddOnProductInstaller.exe;setup.exe;MATLABWindow.exe;update_installer.exe</Applications>
 			<Name>matlab</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">3</Action>
+			<Action type="Proxy">13</Action>
 			<Applications>bitcoin*.exe;NiceHash*;Kryptex.exe;app_nhm.exe;cudo*miner*;xmrig.exe;excavator.exe;PhoenixMiner.exe;xmrig.exe;excavator.exe;lolMiner.exe;miner.exe;miniZ.exe;miniZ_gui.exe;nanominer.exe;nbminer.exe;TT-Miner.exe;z-enemy.exe</Applications>
 			<Name>比特币挖矿</Name>
 		</Rule>
@@ -271,7 +271,7 @@
 			<Name>perl</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">3</Action>
+			<Action type="Proxy">100</Action>
 			<Applications>powershell.exe</Applications>
 			<Name>powershell</Name>
 		</Rule>
