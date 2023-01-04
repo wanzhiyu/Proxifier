@@ -28,13 +28,13 @@
 			<Options>304</Options>
 			<Port>13800</Port>
 			<Address>127.0.0.1</Address>
-			<Label>jp.az</Label>
+			<Label>hk</Label>
 		</Proxy>
 		<Proxy id="11" type="SOCKS5">
 			<Options>256</Options>
 			<Port>13900</Port>
 			<Address>127.0.0.1</Address>
-			<Label>zz->jp.az</Label>
+			<Label>zz->hk</Label>
 		</Proxy>
 		<Proxy id="2" type="SOCKS5">
 			<Options>256</Options>
@@ -127,7 +127,7 @@
 			<Name>chrome</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">12</Action>
+			<Action type="Proxy">11</Action>
 			<Applications>firefox.exe</Applications>
 			<Name>firefox</Name>
 		</Rule>
