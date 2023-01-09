@@ -117,7 +117,7 @@
 			<Name>msedge</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">13</Action>
+			<Action type="Proxy">4</Action>
 			<Applications>"C:\Users\wanzh\AppData\Local\Google\Chrome SxS\Application\chrome.exe"</Applications>
 			<Name>chrome canary</Name>
 		</Rule>
@@ -138,7 +138,7 @@
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">13</Action>
-			<Applications>vivaldi.exe</Applications>
+			<Applications>vivaldi.exe;"C:\Users\wanzh\AppData\Local\Vivaldi\Application\*.exe"</Applications>
 			<Name>Vivaldi</Name>
 		</Rule>
 		<Rule enabled="true">
