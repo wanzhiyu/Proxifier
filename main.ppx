@@ -195,7 +195,7 @@
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">13</Action>
-			<Applications>AddOnProductInstaller.exe;MATLABWindow.exe</Applications>
+			<Applications>AddOnProductInstaller.exe;MATLABWindow.exe;"C:\Program Files\MATLAB\R202*\bin\win64\*.exe"</Applications>
 			<Name>matlab</Name>
 		</Rule>
 		<Rule enabled="true">
