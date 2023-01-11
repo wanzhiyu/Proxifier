@@ -193,9 +193,9 @@
 			<Applications>telegram.exe</Applications>
 			<Name>telegram</Name>
 		</Rule>
-		<Rule enabled="false">
+		<Rule enabled="true">
 			<Action type="Proxy">13</Action>
-			<Applications>AddOnProductInstaller.exe;setup.exe;MATLABWindow.exe;update_installer.exe</Applications>
+			<Applications>AddOnProductInstaller.exe;MATLABWindow.exe</Applications>
 			<Name>matlab</Name>
 		</Rule>
 		<Rule enabled="true">
