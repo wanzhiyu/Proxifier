@@ -122,12 +122,12 @@
 			<Name>chrome canary</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">11</Action>
+			<Action type="Proxy">13</Action>
 			<Applications>chrome.exe;GoogleUpdate.exe</Applications>
 			<Name>chrome</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">1</Action>
+			<Action type="Proxy">11</Action>
 			<Applications>firefox.exe;tor.exe</Applications>
 			<Name>firefox</Name>
 		</Rule>
