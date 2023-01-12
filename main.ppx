@@ -122,12 +122,12 @@
 			<Name>chrome canary</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">13</Action>
+			<Action type="Proxy">11</Action>
 			<Applications>chrome.exe;GoogleUpdate.exe</Applications>
 			<Name>chrome</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">12</Action>
+			<Action type="Proxy">1</Action>
 			<Applications>firefox.exe;tor.exe</Applications>
 			<Name>firefox</Name>
 		</Rule>
@@ -297,6 +297,11 @@
 			<Action type="Proxy">100</Action>
 			<Applications>AudioRelay.exe</Applications>
 			<Name>Audio relay</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">100</Action>
+			<Applications>ZhiYunTranslator.exe</Applications>
+			<Name>知云</Name>
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Direct" />
