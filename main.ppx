@@ -122,7 +122,7 @@
 			<Name>chrome canary</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">13</Action>
+			<Action type="Proxy">11</Action>
 			<Applications>chrome.exe;GoogleUpdate.exe</Applications>
 			<Name>chrome</Name>
 		</Rule>
@@ -132,7 +132,7 @@
 			<Name>firefox</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">13</Action>
+			<Action type="Proxy">12</Action>
 			<Applications>opera*.exe;</Applications>
 			<Name>opera</Name>
 		</Rule>
