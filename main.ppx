@@ -127,12 +127,12 @@
 			<Name>chrome</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">11</Action>
+			<Action type="Proxy">12</Action>
 			<Applications>firefox.exe;tor.exe</Applications>
 			<Name>firefox</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">12</Action>
+			<Action type="Proxy">13</Action>
 			<Applications>opera*.exe;</Applications>
 			<Name>opera</Name>
 		</Rule>
