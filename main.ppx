@@ -127,7 +127,7 @@
 			<Name>chrome</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">12</Action>
+			<Action type="Proxy">14</Action>
 			<Applications>firefox.exe;tor.exe</Applications>
 			<Name>firefox</Name>
 		</Rule>
@@ -147,12 +147,12 @@
 			<Name>Yandex</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">100</Action>
+			<Action type="Proxy">14</Action>
 			<Applications>ONENOTE.EXE;peopleapp.exe;yourphone.exe;onenoteim.exe;outlook.exe;whiteboardwrt.exe;POWERPNT.EXE;WINWORD.EXE;*.sharepoint.exe</Applications>
 			<Name>家庭版Office</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">100</Action>
+			<Action type="Proxy">13</Action>
 			<Targets>*.sharepoint.com;*.office.net;*.windows.net</Targets>
 			<Applications>onedrive.exe</Applications>
 			<Name>OFB (OneDrive for business)</Name>
