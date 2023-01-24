@@ -79,7 +79,44 @@
 			<Label>zz-balancer</Label>
 		</Proxy>
 	</ProxyList>
-	<ChainList />
+	<ChainList>
+		<Chain id="101" type="redundancy">
+			<RedundancyRecheckTime>60</RedundancyRecheckTime>
+			<RedundancyRecheck>true</RedundancyRecheck>
+			<RedundancyTryDirect>false</RedundancyTryDirect>
+			<RedundancyTimeout>30</RedundancyTimeout>
+			<Proxy enabled="true">11</Proxy>
+			<Proxy enabled="true">100</Proxy>
+			<Name>hk_zz</Name>
+		</Chain>
+		<Chain id="102" type="redundancy">
+			<RedundancyRecheckTime>60</RedundancyRecheckTime>
+			<RedundancyRecheck>true</RedundancyRecheck>
+			<RedundancyTryDirect>false</RedundancyTryDirect>
+			<RedundancyTimeout>30</RedundancyTimeout>
+			<Proxy enabled="true">13</Proxy>
+			<Proxy enabled="true">100</Proxy>
+			<Name>jp_zz</Name>
+		</Chain>
+		<Chain id="103" type="redundancy">
+			<RedundancyRecheckTime>60</RedundancyRecheckTime>
+			<RedundancyRecheck>true</RedundancyRecheck>
+			<RedundancyTryDirect>false</RedundancyTryDirect>
+			<RedundancyTimeout>10</RedundancyTimeout>
+			<Proxy enabled="true">12</Proxy>
+			<Proxy enabled="true">100</Proxy>
+			<Name>us_zz</Name>
+		</Chain>
+		<Chain id="104" type="redundancy">
+			<RedundancyRecheckTime>60</RedundancyRecheckTime>
+			<RedundancyRecheck>true</RedundancyRecheck>
+			<RedundancyTryDirect>false</RedundancyTryDirect>
+			<RedundancyTimeout>30</RedundancyTimeout>
+			<Proxy enabled="true">14</Proxy>
+			<Proxy enabled="true">100</Proxy>
+			<Name>ru_zz</Name>
+		</Chain>
+	</ChainList>
 	<RuleList>
 		<Rule enabled="true">
 			<Action type="Direct" />
@@ -112,7 +149,7 @@
 			<Name>wwahost</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">12</Action>
+			<Action type="Chain">103</Action>
 			<Applications>msedge*; msedgewebview2.exe</Applications>
 			<Name>msedge</Name>
 		</Rule>
@@ -147,7 +184,7 @@
 			<Name>Yandex</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">14</Action>
+			<Action type="Proxy">12</Action>
 			<Applications>ONENOTE.EXE;peopleapp.exe;yourphone.exe;onenoteim.exe;outlook.exe;whiteboardwrt.exe;POWERPNT.EXE;WINWORD.EXE;*.sharepoint.exe</Applications>
 			<Name>家庭版Office</Name>
 		</Rule>
