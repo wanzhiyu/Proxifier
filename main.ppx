@@ -9,7 +9,7 @@
 			<DnsUdpMode>0</DnsUdpMode>
 		</Resolve>
 		<Encryption mode="disabled" />
-		<ConnectionLoopDetection enabled="false" resolve="true" />
+		<ConnectionLoopDetection enabled="true" resolve="true" />
 		<Udp mode="mode_bypass" />
 		<LeakPreventionMode enabled="false" />
 		<ProcessOtherUsers enabled="true" />
@@ -19,13 +19,13 @@
 	</Options>
 	<ProxyList>
 		<Proxy id="0" type="HTTPS">
-			<Options>304</Options>
+			<Options>256</Options>
 			<Port>1380</Port>
 			<Address>127.0.0.1</Address>
 			<Label>http</Label>
 		</Proxy>
 		<Proxy id="1" type="SOCKS5">
-			<Options>304</Options>
+			<Options>256</Options>
 			<Port>13800</Port>
 			<Address>127.0.0.1</Address>
 			<Label>hk</Label>
@@ -40,40 +40,40 @@
 			<Options>256</Options>
 			<Port>13810</Port>
 			<Address>127.0.0.1</Address>
-			<Label>la2.py</Label>
+			<Label>us</Label>
 		</Proxy>
 		<Proxy id="12" type="SOCKS5">
-			<Options>304</Options>
+			<Options>256</Options>
 			<Port>13910</Port>
 			<Address>127.0.0.1</Address>
-			<Label>zz->la2.py</Label>
+			<Label>zz->us</Label>
 		</Proxy>
 		<Proxy id="3" type="SOCKS5">
-			<Options>304</Options>
+			<Options>256</Options>
 			<Port>13820</Port>
 			<Address>127.0.0.1</Address>
-			<Label>jp.ov</Label>
+			<Label>jp</Label>
 		</Proxy>
 		<Proxy id="13" type="SOCKS5">
-			<Options>304</Options>
+			<Options>256</Options>
 			<Port>13920</Port>
 			<Address>127.0.0.1</Address>
-			<Label>zz->jp.ov</Label>
+			<Label>zz->jp</Label>
 		</Proxy>
 		<Proxy id="4" type="SOCKS5">
-			<Options>304</Options>
+			<Options>256</Options>
 			<Port>13830</Port>
 			<Address>127.0.0.1</Address>
-			<Label>nv.ju</Label>
+			<Label>ru</Label>
 		</Proxy>
 		<Proxy id="14" type="SOCKS5">
-			<Options>304</Options>
+			<Options>256</Options>
 			<Port>13930</Port>
 			<Address>127.0.0.1</Address>
-			<Label>zz->nv.ju</Label>
+			<Label>zz->ru</Label>
 		</Proxy>
 		<Proxy id="100" type="SOCKS5">
-			<Options>304</Options>
+			<Options>256</Options>
 			<Port>13990</Port>
 			<Address>127.0.0.1</Address>
 			<Label>zz-balancer</Label>
@@ -81,40 +81,44 @@
 	</ProxyList>
 	<ChainList>
 		<Chain id="101" type="redundancy">
-			<RedundancyRecheckTime>60</RedundancyRecheckTime>
+			<RedundancyRecheckTime>10</RedundancyRecheckTime>
 			<RedundancyRecheck>true</RedundancyRecheck>
 			<RedundancyTryDirect>false</RedundancyTryDirect>
-			<RedundancyTimeout>30</RedundancyTimeout>
-			<Proxy enabled="true">11</Proxy>
+			<RedundancyTimeout>5</RedundancyTimeout>
+			<Proxy enabled="false">11</Proxy>
+			<Proxy enabled="false">1</Proxy>
 			<Proxy enabled="true">100</Proxy>
-			<Name>hk_zz</Name>
+			<Name>hk_all</Name>
 		</Chain>
 		<Chain id="102" type="redundancy">
-			<RedundancyRecheckTime>60</RedundancyRecheckTime>
+			<RedundancyRecheckTime>10</RedundancyRecheckTime>
 			<RedundancyRecheck>true</RedundancyRecheck>
 			<RedundancyTryDirect>false</RedundancyTryDirect>
-			<RedundancyTimeout>30</RedundancyTimeout>
-			<Proxy enabled="true">13</Proxy>
+			<RedundancyTimeout>5</RedundancyTimeout>
+			<Proxy enabled="false">13</Proxy>
+			<Proxy enabled="true">3</Proxy>
 			<Proxy enabled="true">100</Proxy>
-			<Name>jp_zz</Name>
+			<Name>jp_all</Name>
 		</Chain>
 		<Chain id="103" type="redundancy">
 			<RedundancyRecheckTime>60</RedundancyRecheckTime>
 			<RedundancyRecheck>true</RedundancyRecheck>
 			<RedundancyTryDirect>false</RedundancyTryDirect>
 			<RedundancyTimeout>10</RedundancyTimeout>
-			<Proxy enabled="true">12</Proxy>
+			<Proxy enabled="false">12</Proxy>
+			<Proxy enabled="true">2</Proxy>
 			<Proxy enabled="true">100</Proxy>
-			<Name>us_zz</Name>
+			<Name>us_all</Name>
 		</Chain>
 		<Chain id="104" type="redundancy">
-			<RedundancyRecheckTime>60</RedundancyRecheckTime>
+			<RedundancyRecheckTime>10</RedundancyRecheckTime>
 			<RedundancyRecheck>true</RedundancyRecheck>
 			<RedundancyTryDirect>false</RedundancyTryDirect>
-			<RedundancyTimeout>30</RedundancyTimeout>
-			<Proxy enabled="true">14</Proxy>
+			<RedundancyTimeout>5</RedundancyTimeout>
+			<Proxy enabled="false">14</Proxy>
+			<Proxy enabled="true">4</Proxy>
 			<Proxy enabled="true">100</Proxy>
-			<Name>ru_zz</Name>
+			<Name>ru_all</Name>
 		</Chain>
 	</ChainList>
 	<RuleList>
@@ -128,18 +132,13 @@
 			<Targets>localhost; 127.0.0.1; %ComputerName%; ::1;192.168.*;*.msftconnecttest.com</Targets>
 			<Name>Localhost</Name>
 		</Rule>
-		<Rule enabled="false">
-			<Action type="Proxy">13</Action>
-			<Applications>teamviewer*.exe;</Applications>
-			<Name>teamviewer</Name>
-		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">13</Action>
 			<Applications>*netflix.com</Applications>
 			<Name>netflix</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">13</Action>
+			<Action type="Chain">103</Action>
 			<Applications>"C:\Program Files\Tor Browser\Browser\TorBrowser\Tor\PluggableTransports\*.exe";"C:\Program Files\Tor Browser\Browser\*.exe"</Applications>
 			<Name>Tor</Name>
 		</Rule>
@@ -154,27 +153,27 @@
 			<Name>msedge</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">4</Action>
+			<Action type="Proxy">100</Action>
 			<Applications>"C:\Users\wanzh\AppData\Local\Google\Chrome SxS\Application\chrome.exe"</Applications>
 			<Name>chrome canary</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">11</Action>
+			<Action type="Chain">102</Action>
 			<Applications>chrome.exe;GoogleUpdate.exe</Applications>
 			<Name>chrome</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">14</Action>
-			<Applications>firefox.exe;tor.exe</Applications>
+			<Action type="Chain">102</Action>
+			<Applications>firefox.exe</Applications>
 			<Name>firefox</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">13</Action>
+			<Action type="Chain">102</Action>
 			<Applications>opera*.exe;</Applications>
 			<Name>opera</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">13</Action>
+			<Action type="Chain">103</Action>
 			<Applications>vivaldi.exe;"C:\Users\wanzh\AppData\Local\Vivaldi\Application\*.exe"</Applications>
 			<Name>Vivaldi</Name>
 		</Rule>
@@ -184,20 +183,20 @@
 			<Name>Yandex</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">12</Action>
+			<Action type="Chain">103</Action>
 			<Applications>ONENOTE.EXE;peopleapp.exe;yourphone.exe;onenoteim.exe;outlook.exe;whiteboardwrt.exe;POWERPNT.EXE;WINWORD.EXE;*.sharepoint.exe</Applications>
 			<Name>家庭版Office</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">13</Action>
+			<Action type="Chain">103</Action>
+			<Applications>onedrive.exe</Applications>
+			<Name>OD</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Chain">102</Action>
 			<Targets>*.sharepoint.com;*.office.net;*.windows.net</Targets>
 			<Applications>onedrive.exe</Applications>
 			<Name>OFB (OneDrive for business)</Name>
-		</Rule>
-		<Rule enabled="true">
-			<Action type="Proxy">100</Action>
-			<Applications>onedrive.exe</Applications>
-			<Name>OD</Name>
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">100</Action>
@@ -231,7 +230,7 @@
 			<Name>telegram</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">13</Action>
+			<Action type="Chain">102</Action>
 			<Applications>AddOnProductInstaller.exe;MATLABWindow.exe;"C:\Program Files\MATLAB\R202*\bin\win64\*.exe"</Applications>
 			<Name>matlab</Name>
 		</Rule>
