@@ -85,7 +85,7 @@
 			<RedundancyRecheck>true</RedundancyRecheck>
 			<RedundancyTryDirect>false</RedundancyTryDirect>
 			<RedundancyTimeout>5</RedundancyTimeout>
-			<Proxy enabled="false">11</Proxy>
+			<Proxy enabled="true">11</Proxy>
 			<Proxy enabled="false">1</Proxy>
 			<Proxy enabled="true">100</Proxy>
 			<Name>hk_all</Name>
@@ -95,7 +95,7 @@
 			<RedundancyRecheck>true</RedundancyRecheck>
 			<RedundancyTryDirect>false</RedundancyTryDirect>
 			<RedundancyTimeout>5</RedundancyTimeout>
-			<Proxy enabled="false">13</Proxy>
+			<Proxy enabled="true">13</Proxy>
 			<Proxy enabled="true">3</Proxy>
 			<Proxy enabled="true">100</Proxy>
 			<Name>jp_all</Name>
@@ -105,7 +105,7 @@
 			<RedundancyRecheck>true</RedundancyRecheck>
 			<RedundancyTryDirect>false</RedundancyTryDirect>
 			<RedundancyTimeout>10</RedundancyTimeout>
-			<Proxy enabled="false">12</Proxy>
+			<Proxy enabled="true">12</Proxy>
 			<Proxy enabled="true">2</Proxy>
 			<Proxy enabled="true">100</Proxy>
 			<Name>us_all</Name>
@@ -115,7 +115,7 @@
 			<RedundancyRecheck>true</RedundancyRecheck>
 			<RedundancyTryDirect>false</RedundancyTryDirect>
 			<RedundancyTimeout>5</RedundancyTimeout>
-			<Proxy enabled="false">14</Proxy>
+			<Proxy enabled="true">14</Proxy>
 			<Proxy enabled="true">4</Proxy>
 			<Proxy enabled="true">100</Proxy>
 			<Name>ru_all</Name>
@@ -163,7 +163,7 @@
 			<Name>chrome</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Chain">102</Action>
+			<Action type="Chain">104</Action>
 			<Applications>firefox.exe</Applications>
 			<Name>firefox</Name>
 		</Rule>
