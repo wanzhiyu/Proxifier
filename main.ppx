@@ -138,7 +138,7 @@
 			<Name>netflix</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Chain">103</Action>
+			<Action type="Proxy">12</Action>
 			<Applications>"C:\Program Files\Tor Browser\Browser\TorBrowser\Tor\PluggableTransports\*.exe";"C:\Program Files\Tor Browser\Browser\*.exe"</Applications>
 			<Name>Tor</Name>
 		</Rule>
@@ -148,7 +148,7 @@
 			<Name>wwahost</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Chain">103</Action>
+			<Action type="Proxy">12</Action>
 			<Applications>msedge*; msedgewebview2.exe</Applications>
 			<Name>msedge</Name>
 		</Rule>
@@ -158,22 +158,22 @@
 			<Name>chrome canary</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Chain">102</Action>
+			<Action type="Proxy">13</Action>
 			<Applications>chrome.exe;GoogleUpdate.exe</Applications>
 			<Name>chrome</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Chain">102</Action>
+			<Action type="Proxy">13</Action>
 			<Applications>firefox.exe</Applications>
 			<Name>firefox</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Chain">102</Action>
+			<Action type="Proxy">13</Action>
 			<Applications>opera*.exe;</Applications>
 			<Name>opera</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Chain">103</Action>
+			<Action type="Proxy">12</Action>
 			<Applications>vivaldi.exe;"C:\Users\wanzh\AppData\Local\Vivaldi\Application\*.exe"</Applications>
 			<Name>Vivaldi</Name>
 		</Rule>
@@ -183,18 +183,18 @@
 			<Name>Yandex</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Chain">103</Action>
+			<Action type="Proxy">12</Action>
 			<Applications>ONENOTE.EXE;peopleapp.exe;yourphone.exe;onenoteim.exe;outlook.exe;whiteboardwrt.exe;POWERPNT.EXE;WINWORD.EXE;*.sharepoint.exe</Applications>
 			<Name>家庭版Office</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Chain">102</Action>
+			<Action type="Proxy">13</Action>
 			<Targets>*.sharepoint.com;*.office.net;*.windows.net</Targets>
 			<Applications>onedrive.exe</Applications>
 			<Name>OFB (OneDrive for business)</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Chain">103</Action>
+			<Action type="Proxy">12</Action>
 			<Applications>onedrive.exe</Applications>
 			<Name>OD</Name>
 		</Rule>
@@ -230,7 +230,7 @@
 			<Name>telegram</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Chain">102</Action>
+			<Action type="Proxy">13</Action>
 			<Applications>AddOnProductInstaller.exe;MATLABWindow.exe;"C:\Program Files\MATLAB\R202*\bin\win64\*.exe"</Applications>
 			<Name>matlab</Name>
 		</Rule>
