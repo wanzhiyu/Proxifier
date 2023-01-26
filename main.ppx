@@ -188,15 +188,15 @@
 			<Name>家庭版Office</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Chain">103</Action>
-			<Applications>onedrive.exe</Applications>
-			<Name>OD</Name>
-		</Rule>
-		<Rule enabled="true">
 			<Action type="Chain">102</Action>
 			<Targets>*.sharepoint.com;*.office.net;*.windows.net</Targets>
 			<Applications>onedrive.exe</Applications>
 			<Name>OFB (OneDrive for business)</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Chain">103</Action>
+			<Applications>onedrive.exe</Applications>
+			<Name>OD</Name>
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">100</Action>
