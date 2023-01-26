@@ -86,7 +86,7 @@
 			<RedundancyTryDirect>false</RedundancyTryDirect>
 			<RedundancyTimeout>5</RedundancyTimeout>
 			<Proxy enabled="true">11</Proxy>
-			<Proxy enabled="false">1</Proxy>
+			<Proxy enabled="true">1</Proxy>
 			<Proxy enabled="true">100</Proxy>
 			<Name>hk_all</Name>
 		</Chain>
@@ -163,7 +163,7 @@
 			<Name>chrome</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Chain">104</Action>
+			<Action type="Chain">102</Action>
 			<Applications>firefox.exe</Applications>
 			<Name>firefox</Name>
 		</Rule>
