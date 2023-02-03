@@ -4,7 +4,7 @@
 		<Resolve>
 			<AutoModeDetection enabled="false" />
 			<ViaProxy enabled="false" />
-			<BlockNonATypes enabled="true" />
+			<BlockNonATypes enabled="false" />
 			<ExclusionList OnlyFromListMode="false">localhost;</ExclusionList>
 			<DnsUdpMode>0</DnsUdpMode>
 		</Resolve>
