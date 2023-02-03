@@ -4,13 +4,13 @@
 		<Resolve>
 			<AutoModeDetection enabled="false" />
 			<ViaProxy enabled="false" />
-			<BlockNonATypes enabled="false" />
-			<ExclusionList OnlyFromListMode="false">localhost;*.qq.com;</ExclusionList>
+			<BlockNonATypes enabled="true" />
+			<ExclusionList OnlyFromListMode="false">localhost;</ExclusionList>
 			<DnsUdpMode>0</DnsUdpMode>
 		</Resolve>
 		<Encryption mode="disabled" />
 		<ConnectionLoopDetection enabled="true" resolve="true" />
-		<Udp mode="mode_bypass" />
+		<Udp mode="mode_block_all" />
 		<LeakPreventionMode enabled="false" />
 		<ProcessOtherUsers enabled="true" />
 		<ProcessServices enabled="true" />
@@ -83,7 +83,7 @@
 	<RuleList>
 		<Rule enabled="true">
 			<Action type="Direct" />
-			<Applications>wv2ray.exe;v2ray.exe</Applications>
+			<Applications>wv2ray.exe;v2ray*.exe</Applications>
 			<Name>v2ray</Name>
 		</Rule>
 		<Rule enabled="true">
@@ -122,7 +122,7 @@
 			<Name>chrome</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">11</Action>
+			<Action type="Proxy">12</Action>
 			<Applications>firefox.exe</Applications>
 			<Name>firefox</Name>
 		</Rule>
