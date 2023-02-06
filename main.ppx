@@ -3,15 +3,15 @@
 	<Options>
 		<Resolve>
 			<AutoModeDetection enabled="false" />
-			<ViaProxy enabled="false" />
-			<BlockNonATypes enabled="false" />
-			<ExclusionList OnlyFromListMode="false">localhost;</ExclusionList>
+			<ViaProxy enabled="true" />
+			<BlockNonATypes enabled="true" />
+			<ExclusionList OnlyFromListMode="false">localhost;*ghproxy.com</ExclusionList>
 			<DnsUdpMode>0</DnsUdpMode>
 		</Resolve>
 		<Encryption mode="disabled" />
 		<ConnectionLoopDetection enabled="true" resolve="true" />
 		<Udp mode="mode_block_all" />
-		<LeakPreventionMode enabled="false" />
+		<LeakPreventionMode enabled="true" />
 		<ProcessOtherUsers enabled="true" />
 		<ProcessServices enabled="true" />
 		<HandleDirectConnections enabled="false" />
