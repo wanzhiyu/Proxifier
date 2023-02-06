@@ -299,6 +299,11 @@
 			<Name>知云</Name>
 		</Rule>
 		<Rule enabled="true">
+			<Action type="Proxy">100</Action>
+			<Applications>svchost.exe</Applications>
+			<Name>svchost</Name>
+		</Rule>
+		<Rule enabled="true">
 			<Action type="Direct" />
 			<Name>Default</Name>
 		</Rule>
