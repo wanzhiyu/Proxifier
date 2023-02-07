@@ -235,7 +235,7 @@
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">100</Action>
-			<Applications>githubdesktop.exe;git-remote-https.exe;</Applications>
+			<Applications>githubdesktop.exe;git-remote-https.exe;*GitHubDesktop\*.exe</Applications>
 			<Name>Github</Name>
 		</Rule>
 		<Rule enabled="false">
