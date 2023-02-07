@@ -185,8 +185,8 @@
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">100</Action>
-			<Applications>telegram.exe</Applications>
-			<Name>telegram</Name>
+			<Applications>telegram.exe;discord.exe</Applications>
+			<Name>聊天</Name>
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">13</Action>
@@ -232,11 +232,6 @@
 			<Action type="Proxy">100</Action>
 			<Applications>zotero.exe;ZhiYunTranslator.exe</Applications>
 			<Name>文献管理与阅读</Name>
-		</Rule>
-		<Rule enabled="true">
-			<Action type="Proxy">100</Action>
-			<Applications>discord.exe</Applications>
-			<Name>Discord Chat</Name>
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">100</Action>
