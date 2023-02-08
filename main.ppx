@@ -5,7 +5,7 @@
 			<AutoModeDetection enabled="false" />
 			<ViaProxy enabled="true" />
 			<BlockNonATypes enabled="true" />
-			<ExclusionList OnlyFromListMode="false">localhost;*ghproxy.com;*.game22.store;*.youdao.com;*.oray.com;*.qq.com;*weixin*;*.cn</ExclusionList>
+			<ExclusionList OnlyFromListMode="false">localhost;*ghproxy.com;*.game22.store;*.youdao.com;*.oray.*;*.qq.com;*weixin*;*.cn</ExclusionList>
 			<DnsUdpMode>0</DnsUdpMode>
 		</Resolve>
 		<Encryption mode="disabled" />
@@ -117,7 +117,7 @@
 			<Name>chrome canary</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">13</Action>
+			<Action type="Proxy">12</Action>
 			<Applications>chrome.exe;GoogleUpdate.exe</Applications>
 			<Name>chrome</Name>
 		</Rule>
