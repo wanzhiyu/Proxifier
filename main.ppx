@@ -5,7 +5,7 @@
 			<AutoModeDetection enabled="false" />
 			<ViaProxy enabled="true" />
 			<BlockNonATypes enabled="true" />
-			<ExclusionList OnlyFromListMode="false">localhost;*ghproxy.com;*.game22.store;*.youdao.com;*oray*;*.qq.com</ExclusionList>
+			<ExclusionList OnlyFromListMode="false">localhost;*ghproxy.com;*.game22.store;*.youdao.com;*.oray.com;*.qq.com;*weixin*;*.cn</ExclusionList>
 			<DnsUdpMode>0</DnsUdpMode>
 		</Resolve>
 		<Encryption mode="disabled" />
@@ -163,9 +163,9 @@
 			<Name>开发工具</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">100</Action>
+			<Action type="Proxy">12</Action>
 			<Applications>IDMan.exe;"C:\Program Files\4KDownload\4kvideodownloader\*.exe"</Applications>
-			<Name>idm,4kvideo</Name>
+			<Name>下载工具</Name>
 		</Rule>
 		<Rule enabled="false">
 			<Action type="Proxy">100</Action>
