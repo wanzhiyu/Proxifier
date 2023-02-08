@@ -185,7 +185,7 @@
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">100</Action>
-			<Applications>telegram.exe;discord.exe;teams.exe</Applications>
+			<Applications>telegram.exe;discord.exe</Applications>
 			<Name>聊天</Name>
 		</Rule>
 		<Rule enabled="true">
