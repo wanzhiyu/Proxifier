@@ -5,7 +5,7 @@
 			<AutoModeDetection enabled="false" />
 			<ViaProxy enabled="true" />
 			<BlockNonATypes enabled="true" />
-			<ExclusionList OnlyFromListMode="false">localhost;*ghproxy.com;*.game22.store;*.youdao.com</ExclusionList>
+			<ExclusionList OnlyFromListMode="false">localhost;*ghproxy.com;*.game22.store;*.youdao.com;*oray*;*.qq.com</ExclusionList>
 			<DnsUdpMode>0</DnsUdpMode>
 		</Resolve>
 		<Encryption mode="disabled" />
