@@ -92,7 +92,7 @@
 			<Name>Localhost</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">13</Action>
+			<Action type="Proxy">12</Action>
 			<Applications>*netflix.com</Applications>
 			<Name>netflix</Name>
 		</Rule>
@@ -163,7 +163,7 @@
 			<Name>开发工具</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">12</Action>
+			<Action type="Proxy">100</Action>
 			<Applications>IDMan.exe;"C:\Program Files\4KDownload\4kvideodownloader\*.exe"</Applications>
 			<Name>下载工具</Name>
 		</Rule>
