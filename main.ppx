@@ -3,7 +3,7 @@
 	<Options>
 		<Resolve>
 			<AutoModeDetection enabled="false" />
-			<ViaProxy enabled="true" />
+			<ViaProxy enabled="false" />
 			<BlockNonATypes enabled="true" />
 			<ExclusionList OnlyFromListMode="false">localhost;*ghproxy.com;*.game22.store;*.youdao.com;*.oray.*;*.qq.com;*weixin*;*.cn</ExclusionList>
 			<DnsUdpMode>0</DnsUdpMode>
@@ -11,7 +11,7 @@
 		<Encryption mode="disabled" />
 		<ConnectionLoopDetection enabled="true" resolve="true" />
 		<Udp mode="mode_block_all" />
-		<LeakPreventionMode enabled="true" />
+		<LeakPreventionMode enabled="false" />
 		<ProcessOtherUsers enabled="true" />
 		<ProcessServices enabled="true" />
 		<HandleDirectConnections enabled="false" />
