@@ -99,7 +99,18 @@
 		<Rule enabled="true">
 			<Action type="Proxy">100</Action>
 			<Applications>wwahost.exe;svchost.exe;choco.exe;powershell.exe;perl.exe</Applications>
-			<Name>需高可用联网服务：系统+命令行</Name>
+			<Name>需高可用：系统+命令行</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">100</Action>
+			<Applications>githubdesktop.exe;git-remote-https.exe;*GitHubDesktop\*.exe
+AudioRelay.exe;rufus*.exe</Applications>
+			<Name>需要高可用：第三方软件</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">100</Action>
+			<Applications>pilotshubapp.exe</Applications>
+			<Name>需要高可用：微软</Name>
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">12</Action>
@@ -210,11 +221,6 @@
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">100</Action>
-			<Applications>rufus*.exe</Applications>
-			<Name>rufus</Name>
-		</Rule>
-		<Rule enabled="true">
-			<Action type="Proxy">100</Action>
 			<Applications>"C:\Program Files\National Instruments\NI Package Manager\Updater\install.exe";nipackagemanager.exe;</Applications>
 			<Name>NI</Name>
 		</Rule>
@@ -233,11 +239,6 @@
 			<Applications>zotero.exe;ZhiYunTranslator.exe</Applications>
 			<Name>文献管理与阅读</Name>
 		</Rule>
-		<Rule enabled="true">
-			<Action type="Proxy">100</Action>
-			<Applications>githubdesktop.exe;git-remote-https.exe;*GitHubDesktop\*.exe</Applications>
-			<Name>Github</Name>
-		</Rule>
 		<Rule enabled="false">
 			<Action type="Proxy">100</Action>
 			<Applications>hd-player.exe;memu*.exe;nox_adb.exe;noxvmhandle.exe;noxvboxhandle.exe</Applications>
@@ -252,16 +253,6 @@
 			<Action type="Proxy">100</Action>
 			<Applications>DeepL.exe;CefSharp.BrowserSubprocess.exe</Applications>
 			<Name>DeepL</Name>
-		</Rule>
-		<Rule enabled="true">
-			<Action type="Proxy">100</Action>
-			<Applications>pilotshubapp.exe</Applications>
-			<Name>反馈中心</Name>
-		</Rule>
-		<Rule enabled="true">
-			<Action type="Proxy">100</Action>
-			<Applications>AudioRelay.exe</Applications>
-			<Name>Audio relay</Name>
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Direct" />
