@@ -178,6 +178,11 @@ AudioRelay.exe;rufus*.exe</Applications>
 			<Applications>IDMan.exe;"C:\Program Files\4KDownload\4kvideodownloader\*.exe"</Applications>
 			<Name>下载工具</Name>
 		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">12</Action>
+			<Applications>chatgpt.exe</Applications>
+			<Name>chatgpt</Name>
+		</Rule>
 		<Rule enabled="false">
 			<Action type="Proxy">100</Action>
 			<Applications>aria2c.exe</Applications>
