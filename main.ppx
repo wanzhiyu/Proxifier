@@ -97,7 +97,7 @@
 			<Name>netflix</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">3</Action>
+			<Action type="Proxy">100</Action>
 			<Applications>choco.exe;powershell.exe;perl.exe</Applications>
 			<Name>需高稳定性：命令行</Name>
 		</Rule>
