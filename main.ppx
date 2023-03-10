@@ -4,14 +4,14 @@
 		<Resolve>
 			<AutoModeDetection enabled="false" />
 			<ViaProxy enabled="true" />
-			<BlockNonATypes enabled="true" />
+			<BlockNonATypes enabled="false" />
 			<ExclusionList OnlyFromListMode="false">localhost;*ghproxy.com;*.game22.store;*.youdao.com;*.oray.*;*.qq.com;*weixin*;*.cn</ExclusionList>
 			<DnsUdpMode>0</DnsUdpMode>
 		</Resolve>
 		<Encryption mode="disabled" />
 		<ConnectionLoopDetection enabled="true" resolve="true" />
-		<Udp mode="mode_block_all" />
-		<LeakPreventionMode enabled="true" />
+		<Udp mode="mode_bypass" />
+		<LeakPreventionMode enabled="false" />
 		<ProcessOtherUsers enabled="true" />
 		<ProcessServices enabled="true" />
 		<HandleDirectConnections enabled="false" />
@@ -244,9 +244,11 @@ AudioRelay.exe;rufus*.exe</Applications>
 			<Applications>zotero.exe;ZhiYunTranslator.exe</Applications>
 			<Name>文献管理与阅读</Name>
 		</Rule>
-		<Rule enabled="false">
-			<Action type="Proxy">100</Action>
-			<Applications>hd-player.exe;memu*.exe;nox_adb.exe;noxvmhandle.exe;noxvboxhandle.exe</Applications>
+		<Rule enabled="true">
+			<Action type="Proxy">12</Action>
+			<Applications>*BlueStacks*;"*\BlueStacks*\*.exe";
+memu*.exe;nox_adb.exe;noxvmhandle.exe;noxvboxhandle.exe;
+</Applications>
 			<Name>安卓模拟器</Name>
 		</Rule>
 		<Rule enabled="true">
