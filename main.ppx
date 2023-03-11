@@ -247,7 +247,7 @@ AudioRelay.exe;rufus*.exe</Applications>
 		<Rule enabled="true">
 			<Action type="Proxy">12</Action>
 			<Applications>*BlueStacks*;"*\BlueStacks*\*.exe";
-memu*.exe;nox_adb.exe;noxvmhandle.exe;noxvboxhandle.exe;
+nemu*;memu*.exe;mumu*.exe;nox_adb.exe;noxvmhandle.exe;noxvboxhandle.exe;
 </Applications>
 			<Name>安卓模拟器</Name>
 		</Rule>
