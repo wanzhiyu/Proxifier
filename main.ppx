@@ -109,7 +109,7 @@ AudioRelay.exe;rufus*.exe</Applications>
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">100</Action>
-			<Applications>svchost.exe;pilotshubapp.exe;winstore.app.exe</Applications>
+			<Applications>svchost.exe;pilotshubapp.exe;winstore.app.exe;CefSharp.BrowserSubprocess.exe</Applications>
 			<Name>需要高可用：微软</Name>
 		</Rule>
 		<Rule enabled="true">
@@ -259,7 +259,7 @@ mumu*.exe;"*\MuMu*\*\EmulatorShell\*.exe";"*\Muvm6Vbox\Hypervisor\*.exe"
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">100</Action>
-			<Applications>DeepL.exe;CefSharp.BrowserSubprocess.exe</Applications>
+			<Applications>DeepL.exe;</Applications>
 			<Name>DeepL</Name>
 		</Rule>
 		<Rule enabled="true">
