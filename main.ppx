@@ -104,7 +104,7 @@
 		<Rule enabled="true">
 			<Action type="Proxy">100</Action>
 			<Applications>githubdesktop.exe;git-remote-https.exe;*GitHubDesktop\*.exe
-AudioRelay.exe;rufus*.exe</Applications>
+AudioRelay.exe;rufus*.exe;"*\GreenTools\T-Clock\*.exe"</Applications>
 			<Name>需要高可用：第三方软件</Name>
 		</Rule>
 		<Rule enabled="true">
@@ -170,7 +170,7 @@ AudioRelay.exe;rufus*.exe</Applications>
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">100</Action>
-			<Applications>devenv.exe;qt*-online.exe;vs_setup_bootstrapper.exe;vs_installer*.exe;python.exe;pycharm*;*docker*;vpnkit*;node.exe</Applications>
+			<Applications>devenv.exe;qt*-online.exe;vs_setup_bootstrapper.exe;vs_installer*.exe;python.exe;code.exe;pycharm*;*docker*;vpnkit*;node.exe</Applications>
 			<Name>开发工具</Name>
 		</Rule>
 		<Rule enabled="true">
