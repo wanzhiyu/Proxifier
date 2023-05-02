@@ -3,7 +3,7 @@
 	<Options>
 		<Resolve>
 			<AutoModeDetection enabled="false" />
-			<ViaProxy enabled="true" />
+			<ViaProxy enabled="false" />
 			<BlockNonATypes enabled="true" />
 			<ExclusionList OnlyFromListMode="false">localhost;*.jsdelivr.net;*.game22.store;*.youdao.com;*.oray.*;*.qq.com;*weixin*;*.cn</ExclusionList>
 			<DnsUdpMode>0</DnsUdpMode>
@@ -11,7 +11,7 @@
 		<Encryption mode="disabled" />
 		<ConnectionLoopDetection enabled="true" resolve="true" />
 		<Udp mode="mode_block_all" />
-		<LeakPreventionMode enabled="true" />
+		<LeakPreventionMode enabled="false" />
 		<ProcessOtherUsers enabled="true" />
 		<ProcessServices enabled="true" />
 		<HandleDirectConnections enabled="false" />
@@ -119,11 +119,6 @@ AudioRelay.exe;rufus*.exe;"*\GreenTools\T-Clock\*.exe"</Applications>
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">12</Action>
-			<Applications>opera*.exe;</Applications>
-			<Name>opera</Name>
-		</Rule>
-		<Rule enabled="true">
-			<Action type="Proxy">12</Action>
 			<Applications>msedge*; msedgewebview2.exe</Applications>
 			<Name>msedge</Name>
 		</Rule>
@@ -141,6 +136,11 @@ AudioRelay.exe;rufus*.exe;"*\GreenTools\T-Clock\*.exe"</Applications>
 			<Action type="Proxy">11</Action>
 			<Applications>firefox.exe</Applications>
 			<Name>firefox</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">14</Action>
+			<Applications>opera*.exe;</Applications>
+			<Name>opera</Name>
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">12</Action>
