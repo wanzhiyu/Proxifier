@@ -119,6 +119,11 @@ AudioRelay.exe;rufus*.exe;"*\GreenTools\T-Clock\*.exe"</Applications>
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">12</Action>
+			<Applications>opera*.exe;</Applications>
+			<Name>opera</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">12</Action>
 			<Applications>msedge*; msedgewebview2.exe</Applications>
 			<Name>msedge</Name>
 		</Rule>
@@ -136,11 +141,6 @@ AudioRelay.exe;rufus*.exe;"*\GreenTools\T-Clock\*.exe"</Applications>
 			<Action type="Proxy">11</Action>
 			<Applications>firefox.exe</Applications>
 			<Name>firefox</Name>
-		</Rule>
-		<Rule enabled="true">
-			<Action type="Proxy">14</Action>
-			<Applications>opera*.exe;</Applications>
-			<Name>opera</Name>
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">12</Action>
