@@ -3,17 +3,17 @@
 	<Options>
 		<Resolve>
 			<AutoModeDetection enabled="false" />
-			<ViaProxy enabled="false" />
-			<BlockNonATypes enabled="true" />
+			<ViaProxy enabled="true" />
+			<BlockNonATypes enabled="false" />
 			<ExclusionList OnlyFromListMode="false">localhost;*.jsdelivr.net;*.game22.store;*.youdao.com;*.oray.*;*.qq.com;*weixin*;*.cn</ExclusionList>
 			<DnsUdpMode>0</DnsUdpMode>
 		</Resolve>
 		<Encryption mode="disabled" />
 		<ConnectionLoopDetection enabled="true" resolve="true" />
-		<Udp mode="mode_block_all" />
+		<Udp mode="mode_bypass" />
 		<LeakPreventionMode enabled="false" />
-		<ProcessOtherUsers enabled="true" />
-		<ProcessServices enabled="true" />
+		<ProcessOtherUsers enabled="false" />
+		<ProcessServices enabled="false" />
 		<HandleDirectConnections enabled="false" />
 		<HttpProxiesSupport enabled="true" />
 	</Options>
