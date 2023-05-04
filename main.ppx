@@ -138,7 +138,7 @@ AudioRelay.exe;rufus*.exe;"*\GreenTools\T-Clock\*.exe"</Applications>
 			<Name>firefox</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">14</Action>
+			<Action type="Proxy">12</Action>
 			<Applications>opera*.exe;</Applications>
 			<Name>opera</Name>
 		</Rule>
