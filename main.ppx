@@ -109,7 +109,7 @@ AudioRelay.exe;rufus*.exe;"*\GreenTools\T-Clock\*.exe"</Applications>
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">100</Action>
-			<Applications>svchost.exe;pilotshubapp.exe;winstore.app.exe;CefSharp.BrowserSubprocess.exe</Applications>
+			<Applications>svchost.exe;pilotshubapp.exe;winstore.app.exe;CefSharp.BrowserSubprocess.exe;HxOutlook.exe;AuthHost.exe;HxAccounts.exe;HxTsr.exe</Applications>
 			<Name>需要高可用：微软</Name>
 		</Rule>
 		<Rule enabled="true">
