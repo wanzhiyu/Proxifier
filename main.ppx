@@ -114,6 +114,11 @@ AudioRelay.exe;rufus*.exe;"*\GreenTools\T-Clock\*.exe"</Applications>
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">12</Action>
+			<Applications>chatgpt.exe;slack.exe</Applications>
+			<Name>AI</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">12</Action>
 			<Applications>"C:\Program Files\Tor Browser\Browser\TorBrowser\Tor\PluggableTransports\*.exe";"C:\Program Files\Tor Browser\Browser\*.exe"</Applications>
 			<Name>Tor</Name>
 		</Rule>
@@ -177,11 +182,6 @@ AudioRelay.exe;rufus*.exe;"*\GreenTools\T-Clock\*.exe"</Applications>
 			<Action type="Proxy">100</Action>
 			<Applications>IDMan.exe;"C:\Program Files\4KDownload\4kvideodownloader\*.exe"</Applications>
 			<Name>下载工具</Name>
-		</Rule>
-		<Rule enabled="true">
-			<Action type="Proxy">12</Action>
-			<Applications>chatgpt.exe</Applications>
-			<Name>chatgpt</Name>
 		</Rule>
 		<Rule enabled="false">
 			<Action type="Proxy">100</Action>
