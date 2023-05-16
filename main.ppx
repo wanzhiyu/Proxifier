@@ -263,6 +263,11 @@ mumu*.exe;"*\MuMu*\*\EmulatorShell\*.exe";"*\Muvm6Vbox\Hypervisor\*.exe"
 			<Name>DeepL</Name>
 		</Rule>
 		<Rule enabled="true">
+			<Action type="Proxy">11</Action>
+			<Applications>teamviewer*.exe;</Applications>
+			<Name>远程控制</Name>
+		</Rule>
+		<Rule enabled="true">
 			<Action type="Direct" />
 			<Name>Default</Name>
 		</Rule>
