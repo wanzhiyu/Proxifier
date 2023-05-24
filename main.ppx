@@ -117,7 +117,7 @@ AudioRelay.exe;rufus*.exe;"*\GreenTools\T-Clock\*.exe"</Applications>
 			<Applications>chatgpt.exe;slack.exe</Applications>
 			<Name>AI</Name>
 		</Rule>
-		<Rule enabled="true">
+		<Rule enabled="false">
 			<Action type="Proxy">12</Action>
 			<Applications>"*\TorBrowser\Tor\PluggableTransports\*.exe";"*\Tor Browser\Browser\*.exe"</Applications>
 			<Name>Tor</Name>
