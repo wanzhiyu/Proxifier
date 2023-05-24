@@ -119,7 +119,7 @@ AudioRelay.exe;rufus*.exe;"*\GreenTools\T-Clock\*.exe"</Applications>
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">12</Action>
-			<Applications>"C:\Program Files\Tor Browser\Browser\TorBrowser\Tor\PluggableTransports\*.exe";"C:\Program Files\Tor Browser\Browser\*.exe"</Applications>
+			<Applications>"*\TorBrowser\Tor\PluggableTransports\*.exe";"*\Tor Browser\Browser\*.exe"</Applications>
 			<Name>Tor</Name>
 		</Rule>
 		<Rule enabled="true">
