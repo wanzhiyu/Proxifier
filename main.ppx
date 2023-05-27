@@ -12,9 +12,9 @@
 		<ConnectionLoopDetection enabled="true" resolve="true" />
 		<Udp mode="mode_bypass" />
 		<LeakPreventionMode enabled="false" />
-		<ProcessOtherUsers enabled="true" />
-		<ProcessServices enabled="true" />
-		<HandleDirectConnections enabled="true" />
+		<ProcessOtherUsers enabled="false" />
+		<ProcessServices enabled="false" />
+		<HandleDirectConnections enabled="false" />
 		<HttpProxiesSupport enabled="true" />
 	</Options>
 	<ProxyList>
@@ -138,7 +138,7 @@ AudioRelay.exe;rufus*.exe;"*\GreenTools\T-Clock\*.exe"</Applications>
 			<Name>chrome</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">11</Action>
+			<Action type="Proxy">13</Action>
 			<Applications>firefox.exe</Applications>
 			<Name>firefox</Name>
 		</Rule>
