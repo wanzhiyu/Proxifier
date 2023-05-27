@@ -12,9 +12,9 @@
 		<ConnectionLoopDetection enabled="true" resolve="true" />
 		<Udp mode="mode_bypass" />
 		<LeakPreventionMode enabled="false" />
-		<ProcessOtherUsers enabled="false" />
-		<ProcessServices enabled="false" />
-		<HandleDirectConnections enabled="false" />
+		<ProcessOtherUsers enabled="true" />
+		<ProcessServices enabled="true" />
+		<HandleDirectConnections enabled="true" />
 		<HttpProxiesSupport enabled="true" />
 	</Options>
 	<ProxyList>
@@ -98,7 +98,7 @@
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">13</Action>
-			<Applications>choco.exe;powershell.exe;perl.exe;wsl.exe</Applications>
+			<Applications>choco.exe;powershell.exe;perl.exe;wsl*.exe;</Applications>
 			<Name>需高稳定性：命令行</Name>
 		</Rule>
 		<Rule enabled="true">
