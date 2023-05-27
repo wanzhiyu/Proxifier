@@ -107,7 +107,7 @@
 			<Name>需要高可用：微软</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">100</Action>
+			<Action type="Proxy">13</Action>
 			<Applications>githubdesktop.exe;git-remote-https.exe;*GitHubDesktop\*.exe
 AudioRelay.exe;rufus*.exe;"*\GreenTools\T-Clock\*.exe"</Applications>
 			<Name>需要高可用：第三方软件</Name>
