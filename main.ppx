@@ -174,7 +174,7 @@ AudioRelay.exe;rufus*.exe;"*\GreenTools\T-Clock\*.exe"</Applications>
 			<Name>OD</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">100</Action>
+			<Action type="Proxy">13</Action>
 			<Applications>devenv.exe;qt*-online.exe;vs_setup_bootstrapper.exe;vs_installer*.exe;python.exe;code.exe;pycharm*;*docker*;vpnkit*;node.exe</Applications>
 			<Name>开发工具</Name>
 		</Rule>
