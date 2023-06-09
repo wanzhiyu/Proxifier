@@ -114,7 +114,7 @@ AudioRelay.exe;rufus*.exe;"*\GreenTools\T-Clock\*.exe"</Applications>
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">12</Action>
-			<Applications>chatgpt.exe;slack.exe</Applications>
+			<Applications>chatgpt.exe;slack.exe;chatbox.exe</Applications>
 			<Name>AI</Name>
 		</Rule>
 		<Rule enabled="false">
