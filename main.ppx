@@ -4,14 +4,14 @@
 		<Resolve>
 			<AutoModeDetection enabled="false" />
 			<ViaProxy enabled="true" />
-			<BlockNonATypes enabled="false" />
+			<BlockNonATypes enabled="true" />
 			<ExclusionList OnlyFromListMode="false">localhost;*.jsdelivr.net;*.game22.store;*.youdao.com;*.oray.*;*.qq.com;*weixin*;*.cn</ExclusionList>
 			<DnsUdpMode>0</DnsUdpMode>
 		</Resolve>
 		<Encryption mode="disabled" />
 		<ConnectionLoopDetection enabled="true" resolve="true" />
-		<Udp mode="mode_bypass" />
-		<LeakPreventionMode enabled="false" />
+		<Udp mode="mode_block_all" />
+		<LeakPreventionMode enabled="true" />
 		<ProcessOtherUsers enabled="false" />
 		<ProcessServices enabled="false" />
 		<HandleDirectConnections enabled="false" />
@@ -98,7 +98,7 @@
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">13</Action>
-			<Applications>choco.exe;powershell.exe;perl.exe;wsl*.exe;</Applications>
+			<Applications>choco.exe;powershell.exe;perl.exe;wsl*.exe;curl.exe</Applications>
 			<Name>需高稳定性：命令行</Name>
 		</Rule>
 		<Rule enabled="true">
@@ -128,12 +128,12 @@ AudioRelay.exe;rufus*.exe;"*\GreenTools\T-Clock\*.exe"</Applications>
 			<Name>msedge</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">100</Action>
+			<Action type="Proxy">14</Action>
 			<Applications>"C:\Users\wanzh\AppData\Local\Google\Chrome SxS\Application\chrome.exe"</Applications>
 			<Name>chrome canary</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">13</Action>
+			<Action type="Proxy">3</Action>
 			<Applications>chrome.exe;GoogleUpdate.exe</Applications>
 			<Name>chrome</Name>
 		</Rule>
@@ -142,7 +142,7 @@ AudioRelay.exe;rufus*.exe;"*\GreenTools\T-Clock\*.exe"</Applications>
 			<Applications>firefox.exe</Applications>
 			<Name>firefox</Name>
 		</Rule>
-		<Rule enabled="true">
+		<Rule enabled="false">
 			<Action type="Proxy">12</Action>
 			<Applications>opera*.exe;</Applications>
 			<Name>opera</Name>
@@ -220,8 +220,8 @@ AudioRelay.exe;rufus*.exe;"*\GreenTools\T-Clock\*.exe"</Applications>
 			<Name>比特币挖矿</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">100</Action>
-			<Applications>wish.exe;</Applications>
+			<Action type="Proxy">13</Action>
+			<Applications>wish*.exe;install-tl-windows.exe;*perl*.exe</Applications>
 			<Name>Latex</Name>
 		</Rule>
 		<Rule enabled="true">
@@ -235,7 +235,7 @@ AudioRelay.exe;rufus*.exe;"*\GreenTools\T-Clock\*.exe"</Applications>
 			<Name>JAVA</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Proxy">100</Action>
+			<Action type="Proxy">13</Action>
 			<Applications>*NVIDIA*;*GeForce*Experience*;nvcontainer.exe;"nvidia geforce experience. exe"</Applications>
 			<Name>驱动</Name>
 		</Rule>
@@ -266,6 +266,11 @@ mumu*.exe;"*\MuMu*\*\EmulatorShell\*.exe";"*\Muvm6Vbox\Hypervisor\*.exe"
 			<Action type="Proxy">100</Action>
 			<Applications>teamviewer*.exe;</Applications>
 			<Name>远程控制</Name>
+		</Rule>
+		<Rule enabled="false">
+			<Action type="Proxy">12</Action>
+			<Applications>wsa*.exe</Applications>
+			<Name>WSA</Name>
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Direct" />
